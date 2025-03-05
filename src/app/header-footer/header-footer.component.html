@@ -1,0 +1,181 @@
+<nav class="navbar navbar-expand-lg" [ngClass]="{'fixed': isScrolled}">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/image/dattansh 70.png" alt="" srcset="">
+    </a>
+
+    <i class="bi bi-list smallmenuicon" (click)="toggleNav()"></i>
+    <ul class="navbar-nav big_menu">
+      <li>
+        <a (click)="route_to_page('home')">Home</a>
+      </li>
+      <li>
+        <a (click)="route_to_page('about-us')">Who We Are</a>
+      </li>
+
+      <li class="dropdown">
+        <a class="dropdown-toggle">Our Services</a>
+        <ul class="dropdown-menu">
+          <li class="submenu">
+            <a (click)="route_to_page('consulting')">Public Opinion Survey</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('consulting')">Election Campaign Management</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('consulting')">Seat Wise Survey</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('consulting')">Socio-Economic Research</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('consulting')">Political Research</a>
+          </li>
+          <li class="submenu">
+            <a (click)="route_to_page('consulting')">Social Media Campaign</a>
+          </li>
+
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav big_menu">
+
+      <li>
+        <a class="contact_us" (click)="route_to_page('contact')">
+          <i class="bi bi-headset"></i>
+          Contact Us</a>
+      </li>
+    </ul>
+  </div>
+
+  @if(show_small_menu){
+  <ul class="navbar-nav small_menu">
+    <li>
+      <a (click)="route_to_page('home')">Home</a>
+    </li>
+    <li>
+      <a (click)="route_to_page('about-us')">Who We Are</a>
+    </li>
+    <li>
+      <a (click)="route_to_page('our-services')">Our Services</a>
+    </li>
+
+    <li>
+      <a (click)="route_to_page('contact')">
+        <i class="bi bi-headset"></i>
+        Contact Us</a>
+    </li>
+  </ul>
+  }
+
+</nav>
+
+<router-outlet />
+
+<div class="container-fluid footer_scss footcont">
+  <div class="row p-sm-4">
+    <div class="col-12">
+      <img src="assets/image/dattansh logo.jpg" alt="" srcset="" height="120px">
+    </div>
+    <div class="col-lg-4 about_dattansh mt-5">
+      <div class="newletterfoot">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Doloremque quasi, laudantium, eum dolor praesentium molestias necessitatibus inventore neque ratione
+          odit libero id magni eligendi velit.</p>
+      </div>
+
+    </div>
+
+
+    <div class="col-lg-2 col-6 mt-3">
+      <div class="cateG">
+        <ul>
+
+          <li class="categoryfoot">
+            <span class="categoryfoot1"> Quick Links</span>
+          </li>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a (click)="route_to_page('about-us')">Who We Are </a>
+          </li>
+          <li>
+            <a>Our Services</a>
+          </li>
+          <li>
+            <a (click)="route_to_page('contact')">Contact Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-6 mt-3">
+      <div class="cateG">
+        <ul>
+          <li class="categoryfoot">
+            <span class="categoryfoot1">Our Services</span>
+          </li>
+
+          <li>
+            <a>Public Opinion Survey</a>
+          </li>
+          <li>
+            <a>Election Campaign Management</a>
+          </li>
+          <li>
+            <a>Seat Wise Survey</a>
+          </li>
+          <li>
+            <a>Socio-Economic Research</a>
+          </li>
+          <li>
+            <a>Political Research</a>
+          </li>
+          <li>
+            <a>Social Media Campaign</a>
+          </li>
+    
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="col-lg-3 mt-3">
+
+      <div class="addressfoot">
+
+        <p class="contactfoot">Contact Details</p>
+
+        <p class="addressfoot1">
+          <span><img src="assets/Footer/address.png" alt="Address" srcset=""></span>
+          Bangalore | Delhi | Houston
+        </p>
+
+        <p class="text-color">
+          <span><img src="assets/Footer/mail.png" alt="Mail" srcset=""></span>
+          <a href="mailto:info@rcsengg.com">{{'info@rcsengg.com'}}
+          </a>
+        </p>
+      </div>
+
+      <div class="all_icon mt-3">
+        <h5>Follow Us</h5>
+      </div>
+      <div class="all_icon mt-2">
+
+        <a href="https://x.com/dattanshsm/status/1855275986809495665" target="_blank"><img src="assets/image/facebook.png" alt="facebook"></a>
+        <a href="https://x.com/dattanshsm/status/1855275986809495665" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.instagram.com/dattansh_social/" target="_blank"><img src="assets/image/inst.png" alt="instagram"></a>
+        <a><img src="assets/image/yt.png" alt="youtube"></a>
+        <a href="https://x.com/dattanshsm/status/1855275986809495665" target="_blank"><img src="assets/image/tele.png" alt="twitter"></a>
+
+      </div>
+    </div>
+    <div class="col-12 mt-5 copy_right">
+      <span>COPYRIGHT &copy; 2024 Dattansh PVT LTD | All Right Reserved.</span>
+    </div>
+  </div>
+</div>
