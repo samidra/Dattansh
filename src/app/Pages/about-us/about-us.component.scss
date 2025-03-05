@@ -5,7 +5,7 @@
 }
 
 .startcoversation {
-    background-image: url(/assets/image/aboutbanner.jpg);
+    background-image: url("assets/image/aboutbanner.jpg");
     background-size: cover;
     background-position: center;
     color: whitesmoke;
@@ -165,7 +165,7 @@
 }
 
 .backrow {
-    background-image: url("/assets/image/footer.png");
+    background-image: url("assets/image/footer.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
