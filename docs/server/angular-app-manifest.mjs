@@ -44,16 +44,16 @@ export default {
   }
 ],
   assets: {
-    'index.csr.html': {size: 13661, hash: 'd6f9cd7fa0de425835dd53749f364d5ed5e897ce1b6fd6f92ee0c50a2f22aa27', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1206, hash: '950e68807f32f118ba39783db12c1afebbb7578f283809ea3c9869da7db5995a', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'about-us/index.html': {size: 54070, hash: '245109e81e31f8f56199c7c03a702e4de72b56e1315a0bcb348066d4881dca2d', text: () => import('./assets-chunks/about-us_index_html.mjs').then(m => m.default)},
-    'contact/index.html': {size: 50124, hash: '47761dc871d5b5f0ad1343550ca64f4b1ef2e9778c612b431f3f390f7aca6871', text: () => import('./assets-chunks/contact_index_html.mjs').then(m => m.default)},
-    'service/public-opinion-survey/index.html': {size: 36394, hash: '3f06a9f9307f71c26a572eee9d7d205452937c11d2a9184c37610ada6da3e581', text: () => import('./assets-chunks/service_public-opinion-survey_index_html.mjs').then(m => m.default)},
-    'service/political-research/index.html': {size: 36385, hash: '289ab25b986ca196ea088cf2fbf43a071ebc290404c2d76e187c9160f171bb22', text: () => import('./assets-chunks/service_political-research_index_html.mjs').then(m => m.default)},
-    'index.html': {size: 58976, hash: '3d4e02e0951d46fd247d5d1f7da4d787738073a56cacc9bd01a79c2ba6729bf7', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'service/election-campaign-management/index.html': {size: 36414, hash: '8abc519c6a01afe905c869af5c79c306720eed406cb68815ce262b3ba82253b4', text: () => import('./assets-chunks/service_election-campaign-management_index_html.mjs').then(m => m.default)},
-    'service/seat-wise-survey/index.html': {size: 36379, hash: '91f9d67fbc34b93008cd5360b4dd480cfc8b82339b5a511fde602a8e211a2096', text: () => import('./assets-chunks/service_seat-wise-survey_index_html.mjs').then(m => m.default)},
-    'service/social-media-campaign/index.html': {size: 36393, hash: 'd95ed8d739a9899cba9b9545ea7a682d0c8f73d72596c264184d3770d8a96ddf', text: () => import('./assets-chunks/service_social-media-campaign_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 13661, hash: '9d3b6184a929cd0097fd02f0a9e03dd60447cb90877dfa13b196802016461f69', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1206, hash: 'c14d89fef6860e293576216d0a0ab3295633b39a335f9c9056209b69350a067d', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.html': {size: 58976, hash: '2d24107a31b754764058536c049b7c2d6c8a75ce189ea1d90d5518af4bfccaee', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'about-us/index.html': {size: 54070, hash: 'c0d345fcc86caace8fd01352b44082ce9f2a703d80d315a5b4a3af89f1038792', text: () => import('./assets-chunks/about-us_index_html.mjs').then(m => m.default)},
+    'contact/index.html': {size: 50124, hash: '769068f1942732f8c3286a893a49e56190a2b958f5a9653527531423148f8858', text: () => import('./assets-chunks/contact_index_html.mjs').then(m => m.default)},
+    'service/election-campaign-management/index.html': {size: 36414, hash: '86dfb31800cda710ed1a9dc149fcd028934bb69867ae3e642f3739f66dd22f6a', text: () => import('./assets-chunks/service_election-campaign-management_index_html.mjs').then(m => m.default)},
+    'service/political-research/index.html': {size: 36385, hash: '5d91a125d95b15e5612afd1325691a955fc9a430d663d55bf12d440785a19da1', text: () => import('./assets-chunks/service_political-research_index_html.mjs').then(m => m.default)},
+    'service/public-opinion-survey/index.html': {size: 36394, hash: '9969f0067fe92bb377d5de2617a6076693cb0631727dc1f00a3fdd884e70eb1a', text: () => import('./assets-chunks/service_public-opinion-survey_index_html.mjs').then(m => m.default)},
+    'service/social-media-campaign/index.html': {size: 36393, hash: '0b1e31589d28db276d3ad1e212eaebc890dbd3f01a14a1aff7ce0aad417d41a8', text: () => import('./assets-chunks/service_social-media-campaign_index_html.mjs').then(m => m.default)},
+    'service/seat-wise-survey/index.html': {size: 36379, hash: 'a9a564e04eaf2aa78b0cc90a4fcd7f4b61b2795d2eff974985cdd9b6fa486f67', text: () => import('./assets-chunks/service_seat-wise-survey_index_html.mjs').then(m => m.default)},
     'styles-NCGDYCRK.css': {size: 235935, hash: '7LZFgbQYwnk', text: () => import('./assets-chunks/styles-NCGDYCRK_css.mjs').then(m => m.default)}
   },
 };

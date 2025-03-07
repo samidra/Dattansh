@@ -15,9 +15,8 @@ $background-color_1: rgb(226, 222, 222);
     padding-right: 60px;
     // background: #da0618 ;
     // background-image: linear-gradient(to right, #da0618,#da0618c5, rgb(255, 255, 255));
-    background: rgb(218, 6, 24);
-    background: linear-gradient(103deg, rgba(218, 6, 24, 1) 55%, rgba(255, 255, 255, 1) 56%);
-
+    background: rgb(218,6,24);
+    background: linear-gradient(105deg, rgba(218,6,24,1) 65%, rgba(255,255,255,1) 66%);
     h2 {
         color: white;
         font-size: 3.8em;
@@ -36,7 +35,7 @@ $background-color_1: rgb(226, 222, 222);
         filter: drop-shadow(2px 4px 6px black);
         border-radius: 5px;
         z-index: 1;
-        height: 50vh;
+        height: 45vh;
         background: url("../../../assets/image/dattansh logo.jpg")no-repeat right;
         background-size: contain;
     }
