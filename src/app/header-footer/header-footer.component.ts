@@ -29,6 +29,16 @@ export class HeaderFooterComponent {
     }
   }
 
+    showcontent(elementId: string): void {
+      const scrollTarget = document.getElementById(elementId);
+      const scrollDistance = scrollTarget!.offsetTop - (window.innerHeight/2) + 25
+  
+      window.scrollTo({
+        top: scrollDistance,
+        behavior: 'smooth'
+      });
+    }
+
   route_to_page(page_name:any) {
     this.router.navigate([page_name]);
     window.scrollTo(0, 0);

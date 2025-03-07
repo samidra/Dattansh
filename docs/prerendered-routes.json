@@ -2,6 +2,11 @@
   "routes": {
     "/Dattansh": {},
     "/Dattansh/about-us": {},
-    "/Dattansh/contact": {}
+    "/Dattansh/contact": {},
+    "/Dattansh/service/election-campaign-management": {},
+    "/Dattansh/service/political-research": {},
+    "/Dattansh/service/public-opinion-survey": {},
+    "/Dattansh/service/seat-wise-survey": {},
+    "/Dattansh/service/social-media-campaign": {}
   }
 }

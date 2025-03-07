@@ -7,11 +7,13 @@ $background-color_1: rgb(226, 222, 222);
 }
 
 .main_banner {
-    padding: 3.5em 2em;
-    padding-top: 5em;
-    padding-right: 0;
-    background: #da0618 url("../../../assets/image/banner 1.png") no-repeat right top;
-    background-size: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+    padding-right: 60px;
+    background: #da0618 ;
 
     h2 {
         color: white;
@@ -22,11 +24,19 @@ $background-color_1: rgb(226, 222, 222);
             color: white;
             font-size: 0.22em;
             font-weight: 400;
-            width: 55%;
+            width: 65%;
         }
     }
 
 
+    .img_back{
+        filter: drop-shadow(2px 4px 6px black);
+        border-radius: 5px;
+        z-index: 1;
+        height: 50vh;
+        background:url("../../../assets/image/dattansh logo.jpg")no-repeat right;
+        background-size: contain;
+    }
 }
 
 .who_we_are {
@@ -63,92 +73,184 @@ $background-color_1: rgb(226, 222, 222);
     }
 }
 
+// .what_we_offer {
+//     padding: 50px 10px;
+//     background: url("../../../assets/image/home service bg.png");
+//     background-size: cover;
+//     border-bottom: 5px solid black;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     h3 {
+//         width: fit-content;
+//         filter: drop-shadow(2px 4px 6px black);
+//         padding: 10px;
+//         border-radius: 5px;
+//         background-color: rgba(14, 14, 14, 0.473);
+//         text-align: center;
+//         color: #ffffff;
+//         font-weight: 600;
+//         font-size: 1.8em;
+//         display: flex;
+//         flex-direction: column;
+
+//         span {
+//             margin-top: 10px;
+//             font-weight: 500;
+//             text-align: center;
+//             font-size: 0.5em;
+//         }
+//     }
+
+//     .serveRow {
+//         display: flex;
+//         justify-content: space-evenly;
+//     }
+
+//     .services_div {
+
+//         background-color: rgba(255, 255, 255, 0.801);
+//         box-shadow: 0px 0px 10px 7px #0000001A;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         padding: 20px 10px;
+//         width: 32%;
+//         margin-top: 20px;
+
+//         h4 {
+//             margin-top: 10px;
+//             text-align: center;
+//             color: #000000;
+//             font-weight: 600;
+//             font-size: 1em;
+//         }
+
+//         p {
+//             color: #000000;
+//             margin-top: 5px;
+//             font-weight: 600;
+//             text-align: center;
+//             font-size: 0.7em;
+//         }
+
+//         button {
+//             background-color: #4e4d4d;
+//             color: white;
+//             text-decoration: none;
+//             padding: 6px;
+//             border: none;
+//             border-radius: 5px;
+//             font-size: 0.9em;
+
+//             &:hover {
+//                 filter: drop-shadow(2px 4px 6px black);
+//                 color: white;
+//                 background-color: #bd0716;
+//             }
+//         }
+
+//         img {
+//             filter: drop-shadow(2px 4px 6px black);
+//             border-radius: 50%;
+//             background-color: #ffffff
+//         }
+
+//     }
+
+// }
+
 .what_we_offer {
-    padding: 50px 10px;
-    background: url("../../../assets/image/home service bg.png");
-    background-size: cover;
+    padding: 50px 35px;
     border-bottom: 5px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 
     h3 {
-        width: fit-content;
-        filter: drop-shadow(2px 4px 6px black);
+        font-family: cursive !important;
         padding: 10px;
-        border-radius: 5px;
-        background-color: rgba(14, 14, 14, 0.473);
         text-align: center;
-        color: #ffffff;
-        font-weight: 600;
-        font-size: 1.8em;
-        display: flex;
-        flex-direction: column;
-
-        span {
-            margin-top: 10px;
-            font-weight: 500;
-            text-align: center;
-            font-size: 0.5em;
-        }
+        color: #696868ce;
+        font-weight: 400;
+        font-size: 5.8em;
+        margin-bottom: 10px;
+        font-style: oblique;
     }
 
-    .serveRow {
+    p {
+        color: #000000;
+        font-weight: 500;
+        text-align: center;
+        font-size: 1em;
+        width: 60%;
+    }
+
+    .rowService {
         display: flex;
         justify-content: space-evenly;
-    }
 
-    .services_div {
-
-        background-color: rgba(255, 255, 255, 0.801);
-        box-shadow: 0px 0px 10px 7px #0000001A;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 10px;
-        width: 32%;
-        margin-top: 20px;
-
-        h4 {
-            margin-top: 10px;
-            text-align: center;
-            color: #000000;
-            font-weight: 600;
-            font-size: 1em;
-        }
-
-        p {
-            color: #000000;
-            margin-top: 5px;
-            font-weight: 600;
-            text-align: center;
-            font-size: 0.7em;
-        }
-
-        button {
-            background-color: #4e4d4d;
-            color: white;
-            text-decoration: none;
-            padding: 6px;
-            border: none;
+        .services_div {
+            margin-top: 20px;
+            width: 15.5%;
+            background-color: rgba(196, 193, 193, 0.877);
             border-radius: 5px;
-            font-size: 0.9em;
+            box-shadow: 0px 0px 10px 7px #0000001A;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px 4px;
+
+            img {
+                border-radius: 50%;
+                background-color: #ffffff
+            }
+
+            h4 {
+                margin-top: 5px;
+                text-align: center;
+                color: #000000;
+                font-weight: 700;
+                font-size: 0.7em;
+            }
+
+            p {
+                color: #000000;
+                margin-top: 5px;
+                font-weight: 700;
+                text-align: center;
+                font-size: 0.65em;
+                width: 100%;
+            }
+
+            button {
+                margin-top: 6px;
+                background-color: #bd0716;
+                color: white;
+                text-decoration: none;
+                padding: 6px;
+                border: none;
+                font-size: 0.7em;
+
+                &:hover {
+                    filter: drop-shadow(2px 4px 6px black);
+                    color: white;
+                }
+            }
 
             &:hover {
-                filter: drop-shadow(2px 4px 6px black);
-                color: white;
-                background-color: #bd0716;
+                scale: 1.1;
+
+                button {
+                    filter: drop-shadow(2px 4px 6px black);
+                }
             }
         }
 
-        img {
-            filter: drop-shadow(2px 4px 6px black);
-            border-radius: 50%;
-            background-color: #ffffff
-        }
-
     }
-
 }
 
 .dattansh_resource {
@@ -273,6 +375,27 @@ $background-color_1: rgb(226, 222, 222);
     }
 }
 
+@media (max-width: 992px) {
+
+    .what_we_offer {
+        padding: 30px 15px;
+
+        h3 {
+            font-size: 4.8em;
+        }
+
+        p {
+            width: 90%;
+        }
+
+        .rowService {
+            .services_div {
+                width: 30%;
+            }
+        }
+    }
+
+}
 
 @media (max-width: 950px) {
 
@@ -326,28 +449,45 @@ $background-color_1: rgb(226, 222, 222);
         }
     }
 
-    .dattansh_resource {
+    .video_div {
         padding: 4px;
     }
 }
 
 @media (max-width: 768px) {
 
-    .what_we_offer {
+    // .what_we_offer {
 
-        h3 {
-            font-size: 1.4em;
+    //     h3 {
+    //         font-size: 1.4em;
 
-            span {
-                font-weight: 400;
-                font-size: 0.6em;
-            }
+    //         span {
+    //             font-weight: 400;
+    //             font-size: 0.6em;
+    //         }
+    //     }
+
+    //     .services_div {
+    //         width: 47%;
+    //     }
+
+    // }
+
+    .main_banner {
+        height: 90vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10px 20px;
+        
+        h2{
+            width: 85%;
         }
-
-        .services_div {
-            width: 47%;
+        .img_back{
+            margin-bottom: 30px;
+            height: 35vh;
+            background:url("../../../assets/image/dattansh logo.jpg")no-repeat left;
+            background-size: contain;
         }
-
     }
 
     .dattansh_resource {
@@ -359,17 +499,31 @@ $background-color_1: rgb(226, 222, 222);
         }
     }
 
+    .what_we_offer {
+        padding: 30px 15px;
+
+        h3 {
+            font-size: 3em;
+        }
+
+        .rowService {
+            .services_div {
+                width: 45%;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
 
-    .what_we_offer {
+    // .what_we_offer {
 
-        .services_div {
-            width: 97%;
-        }
+    //     .services_div {
+    //         width: 97%;
+    //     }
 
-    }
+    // }
 
     .part4 {
         margin-top: 0;
@@ -449,16 +603,14 @@ $background-color_1: rgb(226, 222, 222);
     }
 }
 
-@media (max-width: 452px) {
+@media (max-width: 474px) {
 
     .main_banner {
-        padding: 2.5em 0.6em;
-        padding-top: 3em;
 
         h2 {
 
-            width: 95%;
-            font-size: 2.5em;
+            width: 98%;
+            font-size: 2.2em;
 
             p {
                 color: #000000;
@@ -476,18 +628,29 @@ $background-color_1: rgb(226, 222, 222);
 
     .main_banner {
         h2 {
-
             width: 98%;
             font-size: 2em;
 
-            p {
-                color: #000000;
-                font-size: 0.28em;
-                font-weight: 600;
-                width: 100%;
-            }
         }
 
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .what_we_offer {
+        padding: 10px 15px;
+
+        p {
+            width: 90%;
+        }
+
+        .rowService {
+            .services_div {
+                width: 95%;
+            }
+        }
     }
 
 }

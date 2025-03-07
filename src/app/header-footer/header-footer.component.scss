@@ -63,9 +63,11 @@
 
 .navbar {
     .container-fluid {
-        padding: 0.6em;
+        padding: 0;
 
         .navbar-brand {
+            opacity: 0;
+
             img {
                 height: 80px;
                 width: 80px;
@@ -93,7 +95,7 @@
                     }
                 }
 
-                
+
 
                 .contact_us {
                     margin-right: 2em;
@@ -102,6 +104,7 @@
                     text-decoration: none;
                     padding: 9px;
                     filter: drop-shadow(2px 4px 6px black);
+
                     &:hover {
                         background-color: #b40513;
                         color: white;
@@ -149,6 +152,7 @@
                 &:hover {
                     .dropdown-menu {
                         display: block;
+
                         &:hover {
                             li {
                                 a {
@@ -172,10 +176,17 @@
     transition: all 0.5s !important;
     z-index: 19;
     border-radius: 0;
-    
 }
 
 .navbar.fixed {
+
+    .container-fluid {
+        padding: 0.6em !important;
+    }
+    .navbar-brand {
+        opacity: 1 !important;
+    }
+
     background-color: white !important;
     width: 100%;
     animation: slide-down 0.7s !important;
@@ -183,21 +194,24 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-bottom: 5px solid black;
 
+
     ul {
 
         li {
             a {
                 color: black !important;
+
                 &:hover {
                     color: #da0618 !important;
                 }
             }
 
-            
+
 
             .contact_us {
                 background-color: #da0618 !important;
                 color: white !important;
+
                 &:hover {
                     color: white !important;
                     background-color: #b40513 !important;
@@ -314,6 +328,7 @@
         border-radius: 3px;
         filter: drop-shadow(2px 4px 6px black);
     }
+
     .newletterfoot {
 
         p {
@@ -440,13 +455,13 @@
     .contactfoot {
 
         font-size: 1em;
-            text-decoration: underline;
-            font-weight: 600;
-            line-height: 30px;
-            letter-spacing: 0em;
-            text-align: left;
-            list-style: none;
-            color: rgb(204, 202, 202);
+        text-decoration: underline;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        list-style: none;
+        color: rgb(204, 202, 202);
     }
 
 
@@ -479,12 +494,14 @@
         align-items: center;
         margin-right: 9px;
         font-size: 16px;
+
         &:hover {
-            img{
-            height: 30px;
-            width: 30px;
+            img {
+                height: 30px;
+                width: 30px;
             }
-            i{
+
+            i {
                 font-size: 20px;
             }
         }

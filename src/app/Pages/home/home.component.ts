@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   imports: [CommonModule, ReactiveFormsModule],
@@ -9,33 +10,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  videoUrl: string = 'https://youtu.be/_Xd3ptwuuO4?si=8-wYpLuCt_UprGm8';
-  images = [
-
-    {
-      heading: '',
-      path: 'assets/Carousel/home_b1.JPG',
-      para: '',
-      alt: 'img home.',
-    },
-    {
-      heading: '',
-      path: 'assets/Carousel/home_b2.JPG',
-      para: '',
-      alt: 'img home.',
-    },
-    {
-      heading: '',
-      path: 'assets/Carousel/home_b3.JPG',
-      para: '',
-      alt: 'img home.',
-    },
-    
-  ];
-
+  
   enquiry_form: any
 
-  constructor(private fb:FormBuilder){
+  constructor(private fb:FormBuilder,private router: Router){
     this.enquiry_form = this.fb.group({
       firstName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
       lastName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
@@ -44,6 +22,11 @@ export class HomeComponent {
       message: ['', [Validators.required]]
     }) as FormGroup
 
+  }
+
+  route_to_page(page_name:any) {
+    this.router.navigate([page_name]);
+    window.scrollTo(0, 0);
   }
 
   get firstName(){
