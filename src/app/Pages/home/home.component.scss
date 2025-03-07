@@ -13,11 +13,14 @@ $background-color_1: rgb(226, 222, 222);
     align-items: center;
     padding: 0 30px;
     padding-right: 60px;
-    background: #da0618 ;
+    // background: #da0618 ;
+    // background-image: linear-gradient(to right, #da0618,#da0618c5, rgb(255, 255, 255));
+    background: rgb(218, 6, 24);
+    background: linear-gradient(103deg, rgba(218, 6, 24, 1) 55%, rgba(255, 255, 255, 1) 56%);
 
     h2 {
         color: white;
-        font-size: 4em;
+        font-size: 3.8em;
         font-weight: 700;
 
         p {
@@ -29,12 +32,12 @@ $background-color_1: rgb(226, 222, 222);
     }
 
 
-    .img_back{
+    .img_back {
         filter: drop-shadow(2px 4px 6px black);
         border-radius: 5px;
         z-index: 1;
         height: 50vh;
-        background:url("../../../assets/image/dattansh logo.jpg")no-repeat right;
+        background: url("../../../assets/image/dattansh logo.jpg")no-repeat right;
         background-size: contain;
     }
 }
@@ -478,14 +481,15 @@ $background-color_1: rgb(226, 222, 222);
         flex-direction: column-reverse;
         justify-content: center;
         padding: 10px 20px;
-        
-        h2{
-            width: 85%;
+
+        h2 {
+            width: 97%;
         }
-        .img_back{
+
+        .img_back {
             margin-bottom: 30px;
             height: 35vh;
-            background:url("../../../assets/image/dattansh logo.jpg")no-repeat left;
+            background: url("../../../assets/image/dattansh logo.jpg")no-repeat left;
             background-size: contain;
         }
     }
