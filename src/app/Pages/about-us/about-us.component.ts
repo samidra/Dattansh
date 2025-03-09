@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { OurServiceComponent } from "../../our-service/our-service.component";
 
 @Component({
   selector: 'app-about-us',
-  imports: [],
+  imports: [OurServiceComponent],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss'
 })

@@ -55,9 +55,15 @@
     }
 
     .formside {
-        box-shadow: 0px 0px 10px 10px #00000040;
+        box-shadow: 0px 0px 2px 2px #00000040;
+        padding: 10px;
 
-        padding: 20px;
+        .myunderline {
+            border: 2px solid #bd0716d5;
+            width: 60%;
+            margin-top: 10px;
+            padding: 0;
+        }
 
         .error {
             color: red;

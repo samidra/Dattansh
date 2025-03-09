@@ -3,9 +3,11 @@ import { Component } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { OurServiceComponent } from "../../our-service/our-service.component";
+import { ResourceComponent } from "../../resource/resource.component";
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, OurServiceComponent, ResourceComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

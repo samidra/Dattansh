@@ -8,6 +8,7 @@ import { SeatWiseSurveyComponent } from './service/seat-wise-survey/seat-wise-su
 import { ElectionCampaignManagementComponent } from './service/election-campaign-management/election-campaign-management.component';
 import { PoliticalResearchComponent } from './service/political-research/political-research.component';
 import { PublicOpinionSurveyComponent } from './service/public-opinion-survey/public-opinion-survey.component';
+import { SocioEconomicComponent } from './service/socio-economic/socio-economic.component';
 
 
 export const routes: Routes = [
@@ -25,6 +26,7 @@ export const routes: Routes = [
             {path:'service/election-campaign-management', component:ElectionCampaignManagementComponent},
             {path:'service/seat-wise-survey', component:SeatWiseSurveyComponent},
             {path:'service/social-media-campaign', component:SocialMediaCampaignComponent},
+            {path:'service/socio-economic-research', component:SocioEconomicComponent},
             { path: '**', redirectTo: '', pathMatch: 'full' } // Redirect any unknown child routes to HomepageComponent
         ]
     },
